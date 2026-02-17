@@ -14,6 +14,9 @@ dotenv.config({
 if(!process.env.PORT){
     throw new Error("PORT is missing");
 }
+if(!process.env.DATABASE_FILE_NAME){
+    throw new Error("Database file name is missing")
+}
 
 export default {
     NODE_ENV,
