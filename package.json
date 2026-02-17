@@ -21,7 +21,8 @@
   "homepage": "https://github.com/sayyedaaman2/todo_api_file_based#readme",
   "dependencies": {
     "dotenv": "^17.3.1",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
