@@ -1,0 +1,7 @@
+{"level":"info","message":"Server started","port":"9000","timestamp":"2026-02-17T14:01:21.328Z"}
+{"level":"info","message":"Server started","port":"9000","timestamp":"2026-02-17T14:02:03.828Z"}
+{"level":"info","message":"Server started","port":"9000","timestamp":"2026-02-17T14:03:11.612Z"}
+{"level":"info","message":"Server started","port":"9000","timestamp":"2026-02-17T14:04:44.310Z"}
+{"level":"info","message":"Server started","port":"9000","timestamp":"2026-02-17T14:04:46.642Z"}
+{"durationMs":9,"ip":"::ffff:127.0.0.1","level":"info","message":"Request completed","method":"GET","path":"/","status":200,"timestamp":"2026-02-17T14:04:57.473Z"}
+{"durationMs":8,"ip":"::1","level":"info","message":"Request completed","method":"POST","path":"/api/v1/todos","status":400,"timestamp":"2026-02-17T14:05:04.941Z"}
