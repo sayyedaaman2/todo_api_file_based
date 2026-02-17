@@ -104,3 +104,34 @@ export async function getTodo(req, res, next) {
     next(err);
   }
 }
+
+export async function deleteTodoById(req, res, next) {
+  try {
+    const { id } = req.params;
+
+    const db = await readDB(); // { todos: [] }
+
+    const index = db.todos.findIndex(todo => todo.id === id);
+
+    if (index === -1) {
+      return res.status(404).json({
+        success: false,
+        message: "Todo not found",
+      });
+    }
+
+    const deletedTodo = db.todos[index];
+
+    db.todos.splice(index, 1);
+
+    await writeDB(db);
+
+    res.status(200).json({
+      success: true,
+      message: "Todo deleted successfully",
+      data: deletedTodo,
+    });
+  } catch (err) {
+    next(err);
+  }
+}
